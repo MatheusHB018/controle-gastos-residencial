@@ -12,4 +12,5 @@ public class Pessoa {
 
     // Relacionamento (Propriedade de Navegação)
     public ICollection<Transacao> Transacoes { get; set; } = new List<Transacao>();
+    
 }
