@@ -45,7 +45,8 @@ namespace ControleGastosApi.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Descricao = table.Column<string>(type: "TEXT", maxLength: 400, nullable: false),
-                    Valor = table.Column<decimal>(type: "TEXT", nullable: false),
+                    Valor = table.Column<string>(type: "TEXT", nullable: false),
+                    Data = table.Column<DateTime>(type: "TEXT", nullable: false),
                     Tipo = table.Column<string>(type: "TEXT", nullable: false),
                     PessoaId = table.Column<int>(type: "INTEGER", nullable: false),
                     CategoriaId = table.Column<int>(type: "INTEGER", nullable: false)

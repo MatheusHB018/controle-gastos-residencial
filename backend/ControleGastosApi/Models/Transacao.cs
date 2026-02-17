@@ -8,8 +8,9 @@ public class Transacao {
     [Required, MaxLength(400)]
     public string Descricao { get; set; } = string.Empty;
     
-    [Range(0.01, double.MaxValue, ErrorMessage = "O valor deve ser maior que zero.")]
-    public decimal Valor { get; set; }
+    public string Valor { get; set; } = string.Empty;
+
+    public DateTime Data { get; set; }
     
     public string Tipo { get; set; } = string.Empty; // "Despesa" ou "Receita"
     
