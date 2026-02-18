@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace ControleGastosApi.Models;
 
@@ -15,8 +16,10 @@ public class Transacao {
     public string Tipo { get; set; } = string.Empty; // "Despesa" ou "Receita"
     
     public int PessoaId { get; set; }
-    public Pessoa Pessoa { get; set; } = null!;
+    [JsonIgnore]
+    public Pessoa? Pessoa { get; set; }
     
     public int CategoriaId { get; set; }
-    public Categoria Categoria { get; set; } = null!;
+    [JsonIgnore]
+    public Categoria? Categoria { get; set; }
 }

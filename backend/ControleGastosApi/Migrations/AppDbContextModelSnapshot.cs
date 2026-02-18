@@ -33,7 +33,7 @@ namespace ControleGastosApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("ControleGastosApi.Models.Pessoa", b =>
@@ -52,7 +52,7 @@ namespace ControleGastosApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pessoas");
+                    b.ToTable("Pessoas", (string)null);
                 });
 
             modelBuilder.Entity("ControleGastosApi.Models.Transacao", b =>
@@ -85,7 +85,7 @@ namespace ControleGastosApi.Migrations
 
                     b.HasIndex("PessoaId");
 
-                    b.ToTable("Transacoes");
+                    b.ToTable("Transacoes", (string)null);
                 });
 
             modelBuilder.Entity("ControleGastosApi.Models.Transacao", b =>
